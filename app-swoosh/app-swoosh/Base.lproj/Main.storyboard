@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,14 +22,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="cBA-3a-3r9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTB-vm-PBQ">
-                                <rect key="frame" x="40" y="110" width="295" height="61.5"/>
+                                <rect key="frame" x="59.666666666666657" y="109.99999999999999" width="295" height="61.666666666666643"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61.5" id="F5z-bc-DQu"/>
                                     <constraint firstAttribute="width" constant="295" id="ZZT-pT-f89"/>
@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dj-da-WEU">
-                                <rect key="frame" x="40" y="179" width="295" height="30.5"/>
+                                <rect key="frame" x="59.666666666666657" y="179" width="295" height="30.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="295" id="L7E-W6-h9I"/>
                                     <constraint firstAttribute="height" constant="30.5" id="l5m-hL-365"/>
@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fY-Sd-HQ6">
-                                <rect key="frame" x="28" y="279" width="319" height="52"/>
+                                <rect key="frame" x="47.666666666666657" y="279" width="319" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="319" id="GfE-Dw-wdO"/>
                                     <constraint firstAttribute="height" constant="52" id="kuc-iA-UPi"/>
@@ -59,14 +59,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2OQ-kN-VHf">
-                                <rect key="frame" x="128" y="40" width="119" height="20"/>
+                                <rect key="frame" x="147.66666666666669" y="40" width="119.00000000000006" height="20"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox5-FG-8En" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="40" y="587" width="295" height="60"/>
+                                <rect key="frame" x="20" y="656" width="374" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39886558219178081" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="295" id="3wq-rJ-tWV"/>
-                                    <constraint firstAttribute="height" constant="60" id="QHh-12-jlF"/>
+                                    <constraint firstAttribute="height" constant="60" id="AAQ-9t-5CR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="GET STARTED">
@@ -79,15 +78,16 @@
                             <constraint firstItem="0dj-da-WEU" firstAttribute="top" secondItem="UTB-vm-PBQ" secondAttribute="bottom" constant="7.3300000000000001" id="3M0-mv-Lj3"/>
                             <constraint firstItem="UTB-vm-PBQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="56k-QY-Eti"/>
                             <constraint firstItem="2OQ-kN-VHf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6o5-ul-h1G"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ox5-FG-8En" secondAttribute="bottom" constant="60" id="Dxf-Ot-yMR"/>
+                            <constraint firstItem="ox5-FG-8En" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DK1-Ji-1H2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ox5-FG-8En" secondAttribute="bottom" constant="20" id="JIe-jg-rJl"/>
                             <constraint firstItem="UTB-vm-PBQ" firstAttribute="top" secondItem="2OQ-kN-VHf" secondAttribute="bottom" constant="50" id="RaN-36-pn3"/>
                             <constraint firstItem="cBA-3a-3r9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vos-H1-JlW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ox5-FG-8En" secondAttribute="bottom" constant="20" id="XI6-5N-a1A"/>
+                            <constraint firstItem="ox5-FG-8En" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgZ-wl-lS1"/>
                             <constraint firstItem="cBA-3a-3r9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hIC-dl-9I5"/>
                             <constraint firstItem="0fY-Sd-HQ6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0j-Ll-Mvg"/>
                             <constraint firstItem="cBA-3a-3r9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="klf-dm-vFX"/>
                             <constraint firstItem="0dj-da-WEU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mGF-Bc-eqT"/>
-                            <constraint firstItem="ox5-FG-8En" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r91-ex-obp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ox5-FG-8En" secondAttribute="trailing" constant="20" id="ndM-uu-yLr"/>
                             <constraint firstItem="cBA-3a-3r9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rpi-8e-3Ky"/>
                             <constraint firstItem="0fY-Sd-HQ6" firstAttribute="top" secondItem="0dj-da-WEU" secondAttribute="bottom" constant="69.329999999999998" id="u0D-RN-ZyC"/>
                             <constraint firstItem="2OQ-kN-VHf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y9c-mz-mCh"/>

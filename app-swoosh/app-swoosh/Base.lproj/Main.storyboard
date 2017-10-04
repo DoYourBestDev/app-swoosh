@@ -173,8 +173,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llo-2F-cLo">
-                                <rect key="frame" x="10" y="35" width="29" height="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llo-2F-cLo">
+                                <rect key="frame" x="10" y="35" width="30" height="25"/>
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <segue destination="a4x-Hr-dPb" kind="unwind" unwindAction="goBackWithBack:" id="dfS-sn-E4l"/>
@@ -230,13 +230,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="dHY-eS-ocW">
-                                <rect key="frame" x="107" y="40" width="161" height="100.5"/>
+                                <rect key="frame" x="128" y="40" width="119" height="100.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Z5I-S4-H1J">
-                                        <rect key="frame" x="21" y="0.0" width="119" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="20"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired League:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbt-tw-pfN">
-                                        <rect key="frame" x="0.0" y="70" width="161" height="30.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbt-tw-pfN">
+                                        <rect key="frame" x="35.5" y="70" width="48.5" height="30.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -284,16 +284,25 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwN-mg-deQ">
+                                <rect key="frame" x="10" y="35" width="29" height="24"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="i55-9f-jVF" kind="unwind" unwindAction="goBackWithBack:" id="byA-h5-tGi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aHF-d0-I4k" firstAttribute="bottom" secondItem="O50-Xz-lOv" secondAttribute="bottom" constant="20" id="2qd-9P-y5n"/>
                             <constraint firstItem="O50-Xz-lOv" firstAttribute="leading" secondItem="aHF-d0-I4k" secondAttribute="leading" constant="10" id="63V-do-hHh"/>
                             <constraint firstItem="dHY-eS-ocW" firstAttribute="centerX" secondItem="kps-gx-XjN" secondAttribute="centerX" id="9hS-Sz-Zxe"/>
+                            <constraint firstItem="ZwN-mg-deQ" firstAttribute="top" secondItem="aHF-d0-I4k" secondAttribute="top" constant="15" id="Mp0-aZ-o1q"/>
                             <constraint firstItem="p94-qO-Rr0" firstAttribute="leading" secondItem="aHF-d0-I4k" secondAttribute="leading" id="NSh-ae-Ss9"/>
                             <constraint firstItem="p94-qO-Rr0" firstAttribute="top" secondItem="kps-gx-XjN" secondAttribute="top" id="OP9-mf-8a1"/>
                             <constraint firstItem="dHY-eS-ocW" firstAttribute="top" secondItem="aHF-d0-I4k" secondAttribute="top" constant="20" id="RjV-FQ-IPQ"/>
                             <constraint firstItem="a7z-GL-jhH" firstAttribute="top" secondItem="dHY-eS-ocW" secondAttribute="bottom" constant="100" id="Y6h-TP-xsd"/>
+                            <constraint firstItem="ZwN-mg-deQ" firstAttribute="leading" secondItem="kps-gx-XjN" secondAttribute="leading" constant="10" id="aIy-ms-Bb7"/>
                             <constraint firstItem="a7z-GL-jhH" firstAttribute="centerX" secondItem="kps-gx-XjN" secondAttribute="centerX" id="aOH-de-Kzy"/>
                             <constraint firstItem="aHF-d0-I4k" firstAttribute="trailing" secondItem="a7z-GL-jhH" secondAttribute="trailing" constant="10" id="fEB-qj-22D"/>
                             <constraint firstItem="a7z-GL-jhH" firstAttribute="leading" secondItem="aHF-d0-I4k" secondAttribute="leading" constant="10" id="sdU-sk-12E"/>
@@ -305,6 +314,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQ8-Vw-VSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="i55-9f-jVF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1500" y="133.5832083958021"/>
         </scene>

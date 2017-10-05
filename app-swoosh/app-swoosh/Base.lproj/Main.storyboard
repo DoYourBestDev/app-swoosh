@@ -135,6 +135,9 @@
                                 <state key="normal" title="Womens">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onWomensTapped:" destination="yUy-F7-eaV" eventType="touchUpInside" id="xEr-rC-gu0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLN-N0-Yx1" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="10" y="340" width="355" height="60"/>
@@ -146,8 +149,11 @@
                                 <state key="normal" title="Co-ed">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onCoedTapped:" destination="yUy-F7-eaV" eventType="touchUpInside" id="3dQ-4y-EZf"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-KM-aa2" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-KM-aa2" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="10" y="587" width="355" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.59696061639999998" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -171,6 +177,9 @@
                                 <state key="normal" title="Mens">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onMensTapped:" destination="yUy-F7-eaV" eventType="touchUpInside" id="BuN-77-KEK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llo-2F-cLo">
                                 <rect key="frame" x="10" y="35" width="30" height="25"/>
@@ -212,6 +221,7 @@
                         <viewLayoutGuide key="safeArea" id="WkO-50-e6B"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="k8r-KM-aa2" id="YfT-Ab-ciq"/>
                         <segue destination="faF-b3-LU3" kind="show" identifier="skillVCSegue" id="ivN-ms-Yom"/>
                     </connections>
                 </viewController>

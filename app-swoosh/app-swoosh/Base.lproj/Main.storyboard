@@ -72,7 +72,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yUy-F7-eaV" kind="show" id="12z-yw-yEx"/>
+                                    <action selector="getStartedBtnWassPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNf-Xf-KD7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,8 +98,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="backgroundImage" destination="cBA-3a-3r9" id="d3x-o4-pb7"/>
-                        <outlet property="swooshLogo" destination="2OQ-kN-VHf" id="ivS-3e-eMY"/>
+                        <segue destination="yUy-F7-eaV" kind="show" identifier="leagueVCSegue" id="rt1-PF-9DF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -159,7 +158,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="faF-b3-LU3" kind="show" id="qas-ke-m7S"/>
+                                    <action selector="onNextTapped:" destination="yUy-F7-eaV" eventType="touchUpInside" id="Vp9-QB-Mmh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHv-qg-KDT" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
@@ -177,7 +176,7 @@
                                 <rect key="frame" x="10" y="35" width="30" height="25"/>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="a4x-Hr-dPb" kind="unwind" unwindAction="goBackWithBack:" id="dfS-sn-E4l"/>
+                                    <segue destination="a4x-Hr-dPb" kind="unwind" unwindAction="goBackWithBack:" id="7Pc-vI-7Ph"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -212,6 +211,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WkO-50-e6B"/>
                     </view>
+                    <connections>
+                        <segue destination="faF-b3-LU3" kind="show" identifier="skillVCSegue" id="ivN-ms-Yom"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiw-hA-OfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="a4x-Hr-dPb" userLabel="Exit" sceneMemberID="exit"/>

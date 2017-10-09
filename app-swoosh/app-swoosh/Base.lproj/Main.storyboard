@@ -153,7 +153,7 @@
                                     <action selector="onCoedTapped:" destination="yUy-F7-eaV" eventType="touchUpInside" id="3dQ-4y-EZf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-KM-aa2" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-KM-aa2" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="10" y="587" width="355" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.59696061639999998" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -164,7 +164,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onNextTapped:" destination="yUy-F7-eaV" eventType="touchUpInside" id="Vp9-QB-Mmh"/>
+                                    <action selector="nextBtnWasPressed:" destination="yUy-F7-eaV" eventType="touchUpInside" id="Vp9-QB-Mmh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHv-qg-KDT" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
@@ -221,7 +221,7 @@
                         <viewLayoutGuide key="safeArea" id="WkO-50-e6B"/>
                     </view>
                     <connections>
-                        <outlet property="nextBtn" destination="k8r-KM-aa2" id="YfT-Ab-ciq"/>
+                        <outlet property="nextBtn" destination="k8r-KM-aa2" id="II2-SN-CZS"/>
                         <segue destination="faF-b3-LU3" kind="show" identifier="skillVCSegue" id="ivN-ms-Yom"/>
                     </connections>
                 </viewController>
@@ -295,6 +295,9 @@
                                 <state key="normal" title="FINISH">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishBtnWasPressed:" destination="faF-b3-LU3" eventType="touchUpInside" id="UMW-UI-GE8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwN-mg-deQ">
                                 <rect key="frame" x="10" y="35" width="29" height="24"/>
@@ -324,11 +327,67 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aHF-d0-I4k"/>
                     </view>
+                    <connections>
+                        <segue destination="r72-Ai-yRW" kind="show" identifier="blueSegue" id="hV8-Qp-Lem"/>
+                        <segue destination="kYb-Lp-nfc" kind="show" identifier="purpleSegue" id="UUb-R5-Wrw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQ8-Vw-VSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="i55-9f-jVF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1500" y="133.5832083958021"/>
+        </scene>
+        <!--PurpleVC-->
+        <scene sceneID="poB-r3-91L">
+            <objects>
+                <viewController id="kYb-Lp-nfc" customClass="PurpleVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HvP-2v-f3q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r98-wg-f2e">
+                                <rect key="frame" x="174" y="199" width="83" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="backButton"/>
+                                <connections>
+                                    <segue destination="A9i-qw-Gsi" kind="unwind" unwindAction="goBackWithBack:" id="kv3-Oy-x1n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65232467651367188" green="0.31833228468894958" blue="0.93935298919677734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="xrP-Mk-F6F"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPv-ln-51m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="A9i-qw-Gsi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2228" y="431.33433283358323"/>
+        </scene>
+        <!--BlueVC-->
+        <scene sceneID="O3c-Xi-2ac">
+            <objects>
+                <viewController id="r72-Ai-yRW" customClass="BlueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VPH-02-Ozm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTB-yO-IPI">
+                                <rect key="frame" x="112" y="306" width="117" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="backButton"/>
+                                <connections>
+                                    <segue destination="uY3-vP-0xP" kind="unwind" unwindAction="goBackToSkillWithBack:" id="hHh-z0-tLU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47110164170000002" green="0.97197633979999998" blue="0.89216202499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ncG-Ok-HU6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAe-vh-GOw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uY3-vP-0xP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2213.5999999999999" y="-228.03598200899552"/>
         </scene>
     </scenes>
     <resources>

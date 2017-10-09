@@ -18,7 +18,7 @@ class SkillVC: UIViewController {
     
 
     @IBAction func finishBtnWasPressed(_ sender: Any) {
-         performSegue(withIdentifier: "blueSegue", sender: self)
+        
     }
     
     @IBAction func goBackToSkill(back: UIStoryboardSegue) {

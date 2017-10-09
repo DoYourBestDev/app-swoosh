@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45939A791F8BF0DA0083FF34 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45939A781F8BF0DA0083FF34 /* BlueVC.swift */; };
-		45939A7B1F8BF0F60083FF34 /* PurpleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45939A7A1F8BF0F60083FF34 /* PurpleVC.swift */; };
 		45BF994E1F8145D100D27175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF994D1F8145D100D27175 /* AppDelegate.swift */; };
 		45BF99501F8145D100D27175 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF994F1F8145D100D27175 /* WelcomeVC.swift */; };
 		45BF99531F8145D100D27175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BF99511F8145D100D27175 /* Main.storyboard */; };
@@ -20,8 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		45939A781F8BF0DA0083FF34 /* BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
-		45939A7A1F8BF0F60083FF34 /* PurpleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleVC.swift; sourceTree = "<group>"; };
 		45BF994A1F8145D100D27175 /* app-swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-swoosh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BF994D1F8145D100D27175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45BF994F1F8145D100D27175 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -90,8 +86,6 @@
 				45BF994F1F8145D100D27175 /* WelcomeVC.swift */,
 				45F167171F8666830065C57C /* LeagueVC.swift */,
 				45F167191F8666920065C57C /* SkillVC.swift */,
-				45939A781F8BF0DA0083FF34 /* BlueVC.swift */,
-				45939A7A1F8BF0F60083FF34 /* PurpleVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,8 +174,6 @@
 				45BF994E1F8145D100D27175 /* AppDelegate.swift in Sources */,
 				45F1671A1F8666920065C57C /* SkillVC.swift in Sources */,
 				45BF99611F814A7F00D27175 /* BorderButton.swift in Sources */,
-				45939A7B1F8BF0F60083FF34 /* PurpleVC.swift in Sources */,
-				45939A791F8BF0DA0083FF34 /* BlueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,7 +42,7 @@ class LeagueVC: UIViewController {
     }
     
     @IBAction func goBack(back: UIStoryboardSegue) {
-        
+        nextBtn.isEnabled = false
     }
 
 }

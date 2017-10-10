@@ -16,12 +16,12 @@ class LeagueVC: UIViewController {
     @IBOutlet weak var mensBtn: BorderButton!
     @IBOutlet weak var womensBtn: BorderButton!
     @IBOutlet weak var coedBtn: BorderButton!
+    var btnWasSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         player = Player()
-        player.btnWasSelected = false
     }
     
     @IBAction func nextBtnWasPressed(_ sender: Any) {
@@ -46,16 +46,21 @@ class LeagueVC: UIViewController {
     func selectLeague(leagueType: String) {
         player.desiredLeague = leagueType
         nextBtn.isEnabled = true
-        player.btnWasSelected = true
     }
     
     @IBAction func selectButton(button: UIButton) {
-        if  (player.btnWasSelected == false) {
-            button.backgroundColor = UIColor.blue
-            
+        if button == mensBtn {
+            button.backgroundColor = UIColor.darkGray
+            womensBtn.isEnabled = false
+            coedBtn.isEnabled = false
+        } else if button == womensBtn {
+            button.backgroundColor = UIColor.darkGray
+            mensBtn.isEnabled = false
+            coedBtn.isEnabled = false
         } else {
-            player.btnWasSelected = false
-            button.backgroundColor = UIColor.clear
+            button.backgroundColor = UIColor.darkGray
+            mensBtn.isEnabled = false
+            womensBtn.isEnabled = false
         }
     }
     

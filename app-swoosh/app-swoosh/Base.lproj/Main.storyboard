@@ -271,6 +271,9 @@
                                         <state key="normal" title="Beginner">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBegginerTapped:" destination="faF-b3-LU3" eventType="touchUpInside" id="nng-Dm-0i0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1L-qb-bPv" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="189.5" y="0.0" width="165.5" height="60"/>
@@ -282,13 +285,16 @@
                                         <state key="normal" title="Baller">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBallerTapped:" destination="faF-b3-LU3" eventType="touchUpInside" id="nFq-r5-cGx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="20B-6e-mdq"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O50-Xz-lOv" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O50-Xz-lOv" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="10" y="587" width="355" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.59696061639999998" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -330,6 +336,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aHF-d0-I4k"/>
                     </view>
+                    <connections>
+                        <outlet property="ballerBtn" destination="y1L-qb-bPv" id="jrz-qR-HsW"/>
+                        <outlet property="beginnerBtn" destination="dOV-nV-I9P" id="4pf-48-zwc"/>
+                        <outlet property="finishBtn" destination="O50-Xz-lOv" id="Hz8-Tu-ypM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQ8-Vw-VSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="i55-9f-jVF" userLabel="Exit" sceneMemberID="exit"/>

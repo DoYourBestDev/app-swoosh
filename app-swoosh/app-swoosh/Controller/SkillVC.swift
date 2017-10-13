@@ -9,14 +9,29 @@
 import UIKit
 
 class SkillVC: UIViewController {
+    
+    var player: Player!
+    var bckColor: UIColor?
 
+    @IBOutlet weak var ballerBtn: BorderButton!
+    @IBOutlet weak var beginnerBtn: BorderButton!
+    @IBOutlet weak var finishBtn: BorderButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        player = Player()
+        bckColor = ballerBtn.backgroundColor
     }
     
-
+    
+    @IBAction func onBegginerTapped(_ sender: Any) {
+        
+        
+    }
+    @IBAction func onBallerTapped(_ sender: Any) {
+        
+    }
     @IBAction func finishBtnWasPressed(_ sender: Any) {
         
     }
@@ -25,4 +40,16 @@ class SkillVC: UIViewController {
         
     }
     
+    @IBAction func selectButton(button: UIButton) {
+        if button == ballerBtn {
+            button.backgroundColor = UIColor.darkGray
+            beginnerBtn.isEnabled = false
+        } else {
+            button.backgroundColor = UIColor.darkGray
+            ballerBtn.isEnabled = false
+        }
+    }
+    func selectedSkillLvl (choosedLeague: String) {
+        player.selectedSkillLevel = choosedLeague
+    }
 }

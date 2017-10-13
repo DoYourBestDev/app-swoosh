@@ -20,36 +20,51 @@ class SkillVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        player = Player()
+        //player = Player()
         bckColor = ballerBtn.backgroundColor
     }
     
     
     @IBAction func onBegginerTapped(_ sender: Any) {
-        
-        
+        selectButton(button: beginnerBtn)
+        ballerBtn.isEnabled = false
+        finishBtn.isEnabled = true
     }
     @IBAction func onBallerTapped(_ sender: Any) {
-        
+        selectButton(button: ballerBtn)
+        beginnerBtn.isEnabled = false
+        finishBtn.isEnabled = true
     }
     @IBAction func finishBtnWasPressed(_ sender: Any) {
-        
+        print("all good ! ")
+        print(player.desiredLeague)
+        print(player.selectedSkillLevel)
     }
     
     @IBAction func goBackToSkill(back: UIStoryboardSegue) {
-        
+        resetBtnSettingsAndDisableNextBtn()
     }
     
     @IBAction func selectButton(button: UIButton) {
         if button == ballerBtn {
             button.backgroundColor = UIColor.darkGray
             beginnerBtn.isEnabled = false
+            player.selectedSkillLevel = "baller"
         } else {
             button.backgroundColor = UIColor.darkGray
             ballerBtn.isEnabled = false
+            player.selectedSkillLevel = "beginner"
         }
     }
     func selectedSkillLvl (choosedLeague: String) {
         player.selectedSkillLevel = choosedLeague
+    }
+    
+    func resetBtnSettingsAndDisableNextBtn () {
+        beginnerBtn.isEnabled = true
+        beginnerBtn.backgroundColor = bckColor
+        ballerBtn.isEnabled = true
+        ballerBtn.backgroundColor = bckColor
+        finishBtn.isEnabled = false
     }
 }
